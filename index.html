@@ -23,22 +23,22 @@
         <fieldset>  
           <legend>Empezemos!</legend>
           <label for="user_firstName">NOMBRE</label>
-          <input type="text" id="user_firstName" name="lastname">
+          <input type="text" id="user_firstName" name="lastname" maxlength="35" required>
           
           <label for="user_lastName">APELLIDO</label>
-          <input type="text" id="user_lastName" name="lastname">
+          <input type="text" id="user_lastName" name="lastname" maxlength="35" required>
           
           <label for="user_email">EMAIL</label>
-          <input type="text" id="user_email" name="email">
+          <input type="email" id="user_email" name="email" required>
           
           <label for="user_phone">NÚMERO DE TELEFONO</label>
-          <input type="text" id="user_phone" name="phone">
+          <input type="tel" id="user_phone" name="phone" required>
           
           <label for="user_pasword">CONTRASEÑA</label>
-          <input type="text" id="user_pasword" name="password">
+          <input type="text" id="user_pasword" name="password" minlength="8" required>
           
           <label for="user_pasword_confirm">CONFIRMAR CONTRASEÑA</label>
-          <input type="text" id="user_pasword_confirm" name="password_confirm">
+          <input type="password" id="user_pasword_confirm" name="password_confirm" required>
         </fieldset>
         <button>Crear Cuenta</button>
       </form>
