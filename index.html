@@ -4,41 +4,54 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SignUp</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
     <section class="branding col"> 
-      <div class="title">
-        <img src="images/logo.png" alt="anime plush with reading glasses">
-        Manga Reading Club
+      <div class="strip">
+        <img class="logo" src="images/logo.png" alt="anime plush with reading glasses">
+        <div class="title">Manga Reading Club📚</div>
       </div>
     </section>
     <main class="signup col">
       <header>
         <h1>Este no es un servicio real. Aunque probablemente sueñas con la idea de algo similar. 
           <em>Crea una cuenta ahora</em> para empezar.</h1>
-        <h1>Tú sabes que quieres...</h1>   
+        <h1>Tú <em>sabes</em> que quieres.</h1>   
       </header>
       <form action="https://www.youtube.com/watch?v=SeWc7P4E8uU" method="post">
         <fieldset>  
-          <legend>Empezemos!</legend>
-          <label for="user_firstName">NOMBRE</label>
-          <input type="text" id="user_firstName" name="lastname" maxlength="35" required>
+          <legend><h1>Empezemos!</h1></legend>
+          <div class="row">
+            <label for="user_firstName">NOMBRE
+            <input type="text" id="user_firstName" name="lastname" maxlength="35" required>
+            </label>
+
+            <label for="user_lastName">APELLIDO
+            <input type="text" id="user_lastName" name="lastname" maxlength="35" required>
+            </label>
+          </div>
           
-          <label for="user_lastName">APELLIDO</label>
-          <input type="text" id="user_lastName" name="lastname" maxlength="35" required>
+          <div class="row">
+            <label for="user_email">EMAIL
+            <input type="email" id="user_email" name="email" required>
+            </label>
+            
+            <label for="user_phone">NÚMERO DE TELEFONO
+            <input type="tel" id="user_phone" name="phone" required>
+            </label>
+          </div>
           
-          <label for="user_email">EMAIL</label>
-          <input type="email" id="user_email" name="email" required>
-          
-          <label for="user_phone">NÚMERO DE TELEFONO</label>
-          <input type="tel" id="user_phone" name="phone" required>
-          
-          <label for="user_pasword">CONTRASEÑA</label>
-          <input type="text" id="user_pasword" name="password" minlength="8" required>
-          
-          <label for="user_pasword_confirm">CONFIRMAR CONTRASEÑA</label>
-          <input type="password" id="user_pasword_confirm" name="password_confirm" required>
+          <div class="row">
+            <label for="user_pasword">CONTRASEÑA
+            <input type="text" id="user_pasword" name="password" minlength="8" required>
+            </label>
+
+            <label for="user_pasword_confirm">CONFIRMAR CONTRASEÑA
+            <input type="password" id="user_pasword_confirm" name="password_confirm" required>
+            </label>
+          </div>
         </fieldset>
         <button>Crear Cuenta</button>
       </form>

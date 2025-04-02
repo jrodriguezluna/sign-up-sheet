@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Rubik';
-  src: url('Rubik-BlackItalic.woff2') format('woff2'),
-      url('Rubik-BlackItalic.woff') format('woff');
+  src: url('fonts/Rubik-BlackItalic.woff2') format('woff2'),
+      url('fonts/Rubik-BlackItalic.woff') format('woff');
   font-weight: 900;
   font-style: italic;
   font-display: swap;
@@ -9,8 +9,8 @@
 
 @font-face {
   font-family: 'Rubik';
-  src: url('Rubik-Black.woff2') format('woff2'),
-      url('Rubik-Black.woff') format('woff');
+  src: url('fonts/Rubik-Black.woff2') format('woff2'),
+      url('fonts/Rubik-Black.woff') format('woff');
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -18,8 +18,8 @@
 
 @font-face {
   font-family: 'Rubik';
-  src: url('Rubik-Bold.woff2') format('woff2'),
-      url('Rubik-Bold.woff') format('woff');
+  src: url('fonts/Rubik-Bold.woff2') format('woff2'),
+      url('fonts/Rubik-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -27,8 +27,8 @@
 
 @font-face {
   font-family: 'Rubik';
-  src: url('Rubik-Light.woff2') format('woff2'),
-      url('Rubik-Light.woff') format('woff');
+  src: url('fonts/Rubik-Light.woff2') format('woff2'),
+      url('fonts/Rubik-Light.woff') format('woff');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -36,8 +36,8 @@
 
 @font-face {
   font-family: 'Rubik';
-  src: url('Rubik-Italic.woff2') format('woff2'),
-      url('Rubik-Italic.woff') format('woff');
+  src: url('fonts/Rubik-Italic.woff2') format('woff2'),
+      url('fonts/Rubik-Italic.woff') format('woff');
   font-weight: normal;
   font-style: italic;
   font-display: swap;
@@ -45,8 +45,8 @@
 
 @font-face {
   font-family: 'Rubik';
-  src: url('Rubik-BoldItalic.woff2') format('woff2'),
-      url('Rubik-BoldItalic.woff') format('woff');
+  src: url('fonts/Rubik-BoldItalic.woff2') format('woff2'),
+      url('fonts/Rubik-BoldItalic.woff') format('woff');
   font-weight: bold;
   font-style: italic;
   font-display: swap;
@@ -54,8 +54,8 @@
 
 @font-face {
   font-family: 'Rubik';
-  src: url('Rubik-Medium.woff2') format('woff2'),
-      url('Rubik-Medium.woff') format('woff');
+  src: url('fonts/Rubik-Medium.woff2') format('woff2'),
+      url('fonts/Rubik-Medium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -63,8 +63,8 @@
 
 @font-face {
   font-family: 'Rubik';
-  src: url('Rubik-LightItalic.woff2') format('woff2'),
-      url('Rubik-LightItalic.woff') format('woff');
+  src: url('fonts/Rubik-LightItalic.woff2') format('woff2'),
+      url('fonts/Rubik-LightItalic.woff') format('woff');
   font-weight: 300;
   font-style: italic;
   font-display: swap;
@@ -72,8 +72,8 @@
 
 @font-face {
   font-family: 'Rubik';
-  src: url('Rubik-MediumItalic.woff2') format('woff2'),
-      url('Rubik-MediumItalic.woff') format('woff');
+  src: url('fonts/Rubik-MediumItalic.woff2') format('woff2'),
+      url('fonts/Rubik-MediumItalic.woff') format('woff');
   font-weight: 500;
   font-style: italic;
   font-display: swap;
@@ -81,10 +81,191 @@
 
 @font-face {
   font-family: 'Rubik';
-  src: url('Rubik-Regular.woff2') format('woff2'),
-      url('Rubik-Regular.woff') format('woff');
+  src: url('fonts/Rubik-Regular.woff2') format('woff2'),
+      url('fonts/Rubik-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
+ 
+body,
+fieldset {
+  margin: 0;
+  padding: 0;
+}
 
+:root {
+  --blue: #458588;
+  --dark-blue: #076678;
+  --purple: #8f3f71;
+  --black: #282828;
+  --white: #f9f5d7;
+  --grey: hsl(28, 11%, 60%);
+}
+
+:link {
+  color: var(--blue);
+}
+
+:visited {
+  color: var(--purple);
+}
+
+html {
+  min-width: 650px;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: max(0.8rem, 0.8vw);
+  color: var(--white);
+  background-color: var(--black);
+}
+
+main > * {
+  margin-left: 3vw;
+}
+
+h1 {
+  font-weight: 400;
+}
+
+div.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+section {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/girl.jpg");
+  background-position: center center;
+  background-size: contain;
+  background-attachment: fixed;
+  flex-grow: 1;
+  width: 40vw;
+  height: 100%;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+  height: 100%;
+}
+
+header {
+  margin-bottom: 3rem;
+  margin-right: 7vw; 
+}
+
+footer {
+  font-size: max(1rem, 1vw);
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  
+  padding-right: 10vw;
+  padding-bottom: 3vh;
+  border: 0;
+}
+
+input {
+  display: block;
+  font-size: max(0.8rem, 1vw);
+  color: var(--black);
+  background-color: var(--grey);
+  border: 0px;
+  border-radius: 5px;
+  width: max(150px, 15vw);
+  padding: max(0.5rem, 1vh); 
+}
+
+button {
+  font-size: max(1rem, 1vw);
+  font-weight: 900;
+  letter-spacing: 0.1rem;
+  border: 0px;
+  border-radius: 5px;
+  color: var(--white);
+  background-color: var(--blue);
+  width: 15rem;
+  padding: 1rem;
+
+  margin-bottom: 1.5rem;
+}
+
+button:hover {
+  background-color: var(--dark-blue);
+  cursor: pointer;
+}
+
+.row {
+  display: flex;
+  gap: 3rem;
+}
+
+.strip {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin-top: 20vh;
+  width: 100%;
+}
+
+.title {
+  font-family: Rubik system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: clamp(3.2rem, 4vw, 800px);
+  font-weight: 700;
+  word-spacing: 30000000px;
+  color: var(--white);
+  max-width: 50%;
+  padding: 20px;
+}
+
+.logo {
+  display: block;
+  height: clamp(200px, 13vw, 800px);
+  width: auto;
+}
+
+
+@media (max-width: 75rem) { /* Adjust breakpoint as needed */
+  .title {
+    max-width: 100%; /* Allow full width when stacked */
+    text-align: right;
+    margin-right: 1.2rem;
+  }
+
+  .strip {
+    justify-content: flex-start;
+    margin-top: 10vh;
+  }
+
+  header,
+  button,
+  footer {
+    margin-left: 1vw;
+    margin-right: 1vw;
+    
+  }
+
+  header,
+  footer {
+    margin-bottom: 0;
+  }
+
+  header {
+    text-align: left;
+  }
+}
