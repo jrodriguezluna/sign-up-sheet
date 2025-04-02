@@ -99,6 +99,7 @@ fieldset {
   --orange: #d65d0e;
   --blue: #458588;
   --dark-blue: #076678;
+  --green: #98971a;
   --purple: #8f3f71;
   --black: #282828;
   --white: #f9f5d7;
@@ -185,19 +186,18 @@ input {
   display: block;
   font-size: max(0.8rem, 1vw);
   color: var(--black);
+  border: 1px solid transparent;
   border-radius: 5px;
   width: max(150px, 15vw);
   padding: max(0.5rem, 1vh); 
 }
 
 input:user-invalid {
-  border: 3px solid var(--red);
+  box-shadow: 0px 0px 5px 3px var(--red);
 }
 
-input:focus {
-  outline: none;
-  border: 2px solid var(--blue);
-  box-shadow: 0 0 0 1px rgba(21, 156, 228, 0.4);
+input:valid {
+  box-shadow: 0px 0px 5px 3px var(--blue);
 }
 
 button {
